@@ -32,7 +32,8 @@ void setup()
 //  stepper.setRunMode(FOLLOW_POS);    //Установка режиму роботи, mode: FOLLOW_POS - рух до позиції setTarget(...) 
     stepper.autoPower(true);           //автоматичне управління живленням, включається при true
     stepper.enable();
-    stepper.setMaxSpeed(100);          //встановити швидкість руху при русі до позиції setTarget() в кроках/сек
+//  stepper.setMaxSpeed(100);          //встановити швидкість руху при русі до позиції setTarget() в кроках/сек
+    stepper.setSpeed(100);          //встановити швидкість руху при русі до позиції setTarget() в кроках/сек
 }
 
 void loop()
